@@ -9,17 +9,45 @@ body {
     margin: auto;
     margin-top: 75px;
     background-color: rgb(220, 244, 228);
-    max-width: 700px;
+    max-width: 800px;
     border-radius: 24px;
-    padding: 20px;
+    padding: 40px 0 20px;
     box-shadow: 0 0 20px #216a52bd;
+    
+
+}
+.city-form {
+    margin-right: 100px;
+    
+
+}
+
+.search {
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 10px 70px;
+    border-style: none;
+    
+
+}
+.submit {
+    font-size: 18px;
+    border-radius: 20px;
+    padding: 6px 25px;
+    border-style: none;
+    background-color: #43a38591;
+    color: #757575;
+    text-shadow: 0 0 2px #fffbf1;
+    margin-left: 20px;
 
 }
 
 h1 {
     color: #0079d6;
-    font-size: 50px;
+    font-size: 53px;
     text-shadow: 0 0 5px #67ccea;
+    font-weight: 700;
+    margin-top: 15px;
 }
 p strong {
     color: #0090ff;
