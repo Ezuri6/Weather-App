@@ -1,3 +1,26 @@
 body {
     font-family: "Karla", sans-serif;
+    background-color: #fffbf1;
+    text-align: center;
+}
+
+.outside-structure {
+    display: block;
+    margin: auto;
+    margin-top: 75px;
+    background-color: rgb(220, 244, 228);
+    max-width: 700px;
+    border-radius: 24px;
+
+}
+
+h1 {
+    color: #0079d6;
+    font-size: 50px;
+}
+p strong {
+    color: #0090ff;
+}
+a {
+    color: #0091ffb3;
 }
