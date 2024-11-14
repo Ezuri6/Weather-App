@@ -11,12 +11,15 @@ body {
     background-color: rgb(220, 244, 228);
     max-width: 700px;
     border-radius: 24px;
+    padding: 20px;
+    box-shadow: 0 0 20px #216a52bd;
 
 }
 
 h1 {
     color: #0079d6;
     font-size: 50px;
+    text-shadow: 0 0 5px #67ccea;
 }
 p strong {
     color: #0090ff;
