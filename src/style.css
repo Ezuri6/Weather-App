@@ -1,6 +1,6 @@
 body {
     font-family: "Karla", sans-serif;
-    background-color: #fffbf1;
+    background-color: #84bbd271;
     text-align: center;
 }
 
@@ -11,22 +11,20 @@ body {
     background-color: rgb(220, 244, 228);
     max-width: 800px;
     border-radius: 24px;
-    padding: 40px 0 20px;
+    padding: 50px 0 20px;
     box-shadow: 0 0 20px #216a52bd;
     
 
 }
-.city-form {
-    margin-right: 100px;
-    
 
-}
 
 .search {
     font-size: 20px;
     border-radius: 20px;
     padding: 10px 70px;
     border-style: none;
+    background-color: #fffbf1;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.639);
     
 
 }
@@ -39,19 +37,69 @@ body {
     color: #757575;
     text-shadow: 0 0 2px #fffbf1;
     margin-left: 20px;
+    letter-spacing: 2px;
 
+}      
+
+.city-temp {
+    display: flex;
+    justify-content: center;
+    
 }
 
 h1 {
     color: #0079d6;
-    font-size: 53px;
+    font-size: 60px;
     text-shadow: 0 0 5px #67ccea;
     font-weight: 700;
-    margin-top: 15px;
+    margin-top: 45px;
+    margin-right: 50px;
+    margin-bottom: 20px;
 }
+
+.emoji {
+    margin-right: 10px;
+    
+
+}
+
+.temp {
+    font-size: 30px;
+    margin-top: 45px;
+}
+
+.temp-n {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+.celsius {
+    color:rgba(0, 0, 0, 0.686);
+}
+
+p {
+    margin-bottom: 55px;
+}
+
 p strong {
     color: #0090ff;
+    line-height: 25px;
 }
 a {
-    color: #0091ffb3;
+    color: #43a38591;
+}
+
+a:hover {
+    cursor: pointer;
+    color: rgb(110, 108, 108);
+}
+.submit:hover {
+    color: black;
+    cursor: pointer;
+}
+
+hr {
+    border-bottom: #8786864a;
+    margin: 15px;
+
 }
