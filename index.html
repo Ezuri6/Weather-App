@@ -7,20 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="src/style.css">
+<script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
+<link rel="stylesheet" href="src/style.css">
 </head>
 <body>
  <div class="outside-structure">
     <header> 
-      <form class="city-form">
-         <input class="search" type="search" placeholder="Enter a city..." required>
-         <input class="submit" type="submit" value="Search 🔎">
+      <form id="city-form" class="city-form">
+         <input id="search" class="search" type="search" placeholder="Enter a city..." required>
+         <input id="submit" class="submit" type="submit" value="Search 🔎">
         </form>
       
     </header>
     <main>
       <div class="city-temp">
-        <h1>
+        <h1 id="city-name">
             London
         </h1>
         <div class="temp">
