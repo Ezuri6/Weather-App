@@ -4,15 +4,16 @@ function findAllDetails(response){
     let temperature = document.querySelector("#temp-n");
     let cityElement = document.querySelector("#city-name");
     let descriptionElement = document.querySelector("#description");
-
+    let humidityElement = document.querySelector("humidity");
+    let windElement = document.querySelector("windSpeed");
    
     cityElement.innerHTML = response.data.city;
     temperature.innerHTML = Math.round(response.data.temperature.current);
     descriptionElement.innerHTML = response.data.condition.description;
-
+    humidityElement.iinerHTML = response.data.temperature.humidity;
+    windElement.innerHTML = response.data.wind.speed;
 
 }
-
 
 function findRealInf(city){
   let apiKey = "49590o9129b5cbb04f9d3323t6a164fe";
