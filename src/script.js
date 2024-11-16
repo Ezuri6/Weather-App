@@ -1,10 +1,16 @@
 
 
-function findAllDetails (response){
+function findAllDetails(response){
     let temperature = document.querySelector("#temp-n");
     let cityElement = document.querySelector("#city-name");
+    let descriptionElement = document.querySelector("#description");
+
+   
     cityElement.innerHTML = response.data.city;
     temperature.innerHTML = Math.round(response.data.temperature.current);
+    descriptionElement.innerHTML = response.data.condition.description;
+
+
 }
 
 
