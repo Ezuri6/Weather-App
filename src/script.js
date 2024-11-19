@@ -5,8 +5,8 @@ function findAllDetails(response) {
     let temperature = response.data.temperature.current;
     let cityElement = document.querySelector("#city-name");
     let descriptionElement = document.querySelector("#description");
-    let humidityElement = document.querySelector("humidity");
-    let windElement = document.querySelector("windSpeed");
+    let humidityElement = document.querySelector("#humidity");
+    let windElement = document.querySelector("#windSpeed");
     let timeElement = document.querySelector("#time");
     let date = new Date(response.data.time * 1000);
     let iconElement = document.querySelector("#emoji");
