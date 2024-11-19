@@ -15,8 +15,8 @@ function findAllDetails(response) {
     temperatureElement.innerHTML = Math.round(temperature);
     cityElement.innerHTML = response.data.city;
     descriptionElement.innerHTML = response.data.condition.description;
-    humidityElement.iinerHTML = response.data.temperature.humidity;
-    windElement.innerHTML = response.data.wind.speed;
+    humidityElement.iinerHTML = `${response.data.temperature.humidity}%`;
+    windElement.innerHTML = `${response.data.wind.speed}km/h`;
     timeElement.innerHTML = formatDate(date);
     iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
