@@ -44,7 +44,7 @@ function formatDate(date) {
 
 function findRealInf(city) {
   let apiKey = "49590o9129b5cbb04f9d3323t6a164fe";
-  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric&units=metric`;
+  let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=metric`;
    
   axios.get(apiUrl).then(findAllDetails);
 }
