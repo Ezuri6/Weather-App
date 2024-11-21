@@ -52,38 +52,36 @@ h1 {
     font-size: 60px;
     text-shadow: 0 0 5px #67ccea;
     font-weight: 700;
-    margin-top: 45px;
+    margin-top: 55px;
     margin-right: 50px;
-    margin-bottom: 20px;
-}
-
-.emoji {
-    margin-right: 10px;
     
-
 }
-
-.temp {
-    font-size: 30px;
-    margin-top: 45px;
+ 
+.emoji {
+    padding-top: 100px;
+    
 }
-
 .temp-n {
     font-size: 60px;
     font-weight: 700;
+   
+    
 }
 
 .celsius {
     color:rgba(0, 0, 0, 0.686);
+    
 }
 
 p {
-    margin-bottom: 55px;
+    margin: 45px auto;
+    line-height: 25px;
+    font-weight: 600;
 }
 
 p strong {
     color: #0090ff;
-    line-height: 25px;
+    line-height: 30px;
 }
 a {
     color: #43a38591;

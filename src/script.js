@@ -14,9 +14,9 @@ function findAllDetails(response) {
     
     temperatureElement.innerHTML = Math.round(temperature);
     cityElement.innerHTML = response.data.city;
-    descriptionElement.innerHTML = response.data.condition.description;
-    humidityElement.iinerHTML = `${response.data.temperature.humidity}%`;
-    windElement.innerHTML = `${response.data.wind.speed}km/h`;
+    descriptionElement.innerHTML = `${response.data.condition.description}.`;
+    humidityElement.innerHTML = `💧 Humidity: ${response.data.temperature.humidity}`;
+    windElement.innerHTML = `🌪 Wind speed: ${response.data.wind.speed}`;
     timeElement.innerHTML = formatDate(date);
     iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
 }
@@ -39,7 +39,7 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
 
-  return `${day} ${hours}:${minutes}`;
+  return `${day} ${hours}:${minutes},`;
 }
 
 function findRealInf(city) {
@@ -59,4 +59,4 @@ findRealInf(citySearch.value);
 let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", findCity);
 
-findRealInf("Cadiz");
+findRealInf("London");
