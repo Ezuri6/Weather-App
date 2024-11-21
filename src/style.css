@@ -1,9 +1,13 @@
 body {
     font-family: "Karla", sans-serif;
     background-color: #84bbd271;
+    background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/151/069/original/dominik-schroder-FIKD9t5_5zQ-unsplash.jpg?1732201473);
+    background-size: cover;
     text-align: center;
 }
+.screen {
 
+}
 .outside-structure {
     display: block;
     margin: auto;
@@ -58,11 +62,14 @@ h1 {
 }
  
 .emoji {
-    padding-top: 100px;
+    padding-top: 35px;
     
 }
+.temp {
+    padding-top: 50px;
+}
 .temp-n {
-    font-size: 60px;
+    font-size: 70px;
     font-weight: 700;
    
     
