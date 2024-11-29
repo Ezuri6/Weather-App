@@ -100,9 +100,23 @@ a:hover {
     color: black;
     cursor: pointer;
 }
+.forecast-composition {
+    display: flex;
+    justify-content: space-evenly;
+    margin:70px auto 40px;
 
+}
+.f-day {
+    color: #15a975;
+    font-weight: 600;
+    font-size: 20px;
+    text-shadow: 0 0 30px #67ccea;
+}
 hr {
     border-bottom: #8786864a;
     margin: 15px;
 
+}
+footer {
+    color:#616060;
 }

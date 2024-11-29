@@ -1,5 +1,34 @@
 
 
+function displayForecast() {
+ 
+ let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+  let forecastHtml = "";
+
+  days.forEach(function (day) {
+    forecastHtml = forecastHtml + `
+  <div class="f-c-pack">
+          <div class="f-day">${day}</div>
+          <div class="f-emoji">☀️</div>
+          <div class="f-temp">
+            <span class="t-max">
+              20º
+            </span>
+            <span class="t-min">
+              16º
+            </span>
+          </div>
+          </div>`
+  });
+let forecast = document.querySelector("#forecast");
+forecast.innerHTML = forecastHtml;
+}
+
+
+
+
+
+
 function findAllDetails(response) {
     let temperatureElement = document.querySelector("#temp-n");
     let temperature = response.data.temperature.current;
@@ -60,3 +89,4 @@ let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", findCity);
 
 findRealInf("London");
+displayForecast();
