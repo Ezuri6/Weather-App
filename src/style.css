@@ -79,7 +79,7 @@ h1 {
 }
 
 p {
-    margin: 45px auto;
+    margin: 0 auto 45px;
     line-height: 25px;
     font-weight: 600;
 }
