@@ -1,33 +1,42 @@
 
+function formatDateAgain (timestamp) {
+  let date = new Date (timestamp * 1000);
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
 
-function displayForecast() {
- 
- let days = ["Sun", "Mon", "Tue", "Wed", "Thur", "Fri", "Sat"];
+  return days [date.getDay()];
+}
+
+function getForecast(city) {
+  let apiKey = "49590o9129b5cbb04f9d3323t6a164fe";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayForecast);
+
+}
+
+function displayForecast(response) {
   let forecastHtml = "";
 
-  days.forEach(function (day) {
+  response.data.daily.forEach(function (day, index) {
+    if (index< 5){
     forecastHtml = forecastHtml + `
   <div class="f-c-pack">
-          <div class="f-day">${day}</div>
-          <div class="f-emoji">☀️</div>
+          <div class="f-day">${formatDateAgain(day.time)}</div>
+          <img src="${day.condition.icon_url}" class="f-emoji"/>
           <div class="f-temp">
             <span class="t-max">
-              20º
+              <strong>${Math.round(day.temperature.maximum)}</strong>℃ 
             </span>
             <span class="t-min">
-              16º
+              <strong>${Math.round(day.temperature.minimum)}</strong>℃ 
             </span>
           </div>
           </div>`
-  });
+  }
+});
 let forecast = document.querySelector("#forecast");
 forecast.innerHTML = forecastHtml;
 }
-
-
-
-
-
 
 function findAllDetails(response) {
     let temperatureElement = document.querySelector("#temp-n");
@@ -48,6 +57,8 @@ function findAllDetails(response) {
     windElement.innerHTML = `🌪 Wind speed: ${response.data.wind.speed}`;
     timeElement.innerHTML = formatDate(date);
     iconElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-app-icon" />`;
+
+    getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -89,4 +100,4 @@ let cityForm = document.querySelector("#city-form");
 cityForm.addEventListener("submit", findCity);
 
 findRealInf("London");
-displayForecast();
+getForecast("London");

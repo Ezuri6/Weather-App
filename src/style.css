@@ -108,9 +108,12 @@ a:hover {
 }
 .f-day {
     color: #15a975;
-    font-weight: 600;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 18px;
     text-shadow: 0 0 30px #67ccea;
+}
+.f-emoji {
+width: 70px;
 }
 hr {
     border-bottom: #8786864a;
